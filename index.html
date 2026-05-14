@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GitLink Hair & Skin Care Clinic - Premium aesthetic treatments, hair care, skin care, laser treatments, and anti-aging services by certified specialists.">
+    <meta name="keywords" content="hair care, skin care, laser treatment, anti-aging, bridal packages, wellness, spa, medical clinic">
+    <title>GitLink Hair & Skin Care Clinic | Premium Beauty & Medical Treatments</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00BF63',
+                        blue: '#38B6FF',
+                        dark: '#0F172A',
+                        red: '#FF3131',
+                        bg: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="animated-gradient">
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                        <i class="fas fa-spa text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-dark leading-tight">GitLink</h1>
+                        <p class="text-xs text-gray-500">Hair & Skin Care Clinic</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    
+                    <!-- Services Dropdown -->
+                    <div class="dropdown relative">
+                        <a href="services.html" class="nav-link flex items-center gap-1">
+                            Services <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="hair-care.html" class="dropdown-item">
+                                <i class="fas fa-cut text-primary"></i> Hair Care
+                            </a>
+                            <a href="skin-care.html" class="dropdown-item">
+                                <i class="fas fa-leaf text-primary"></i> Skin Care
+                            </a>
+                            <a href="laser-treatments.html" class="dropdown-item">
+                                <i class="fas fa-bolt text-primary"></i> Laser Treatments
+                            </a>
+                            <a href="anti-aging.html" class="dropdown-item">
+                                <i class="fas fa-hourglass-half text-primary"></i> Anti-Aging
+                            </a>
+                            <a href="bridal-packages.html" class="dropdown-item">
+                                <i class="fas fa-gem text-primary"></i> Bridal Packages
+                            </a>
+                            <a href="wellness-spa.html" class="dropdown-item">
+                                <i class="fas fa-spa text-primary"></i> Wellness & Spa
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <!-- CTA & Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <button class="btn btn-primary hidden sm:inline-flex" data-modal="booking">
+                        <i class="fas fa-calendar-check"></i> Book Now
+                    </button>
+                    <button class="mobile-menu-toggle lg:hidden w-10 h-10 flex items-center justify-center">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex items-center justify-between mb-8">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                    <i class="fas fa-spa text-white"></i>
+                </div>
+                <span class="font-bold">GitLink Clinic</span>
+            </div>
+            <button class="mobile-menu-close w-10 h-10 flex items-center justify-center">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        
+        <div class="space-y-2">
+            <a href="index.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium">
+                <i class="fas fa-home w-6"></i> Home
+            </a>
+            <a href="about.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium">
+                <i class="fas fa-info-circle w-6"></i> About Us
+            </a>
+            <a href="services.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium">
+                <i class="fas fa-concierge-bell w-6"></i> Services
+            </a>
+            <a href="gallery.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium">
+                <i class="fas fa-images w-6"></i> Gallery
+            </a>
+            <a href="contact.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium">
+                <i class="fas fa-envelope w-6"></i> Contact
+            </a>
+        </div>
+
+        <div class="mt-8 pt-8 border-t">
+            <button class="btn btn-primary w-full" data-modal="booking">
+                <i class="fas fa-calendar-check"></i> Book Consultation
+            </button>
+        </div>
+
+        <div class="mt-8 flex gap-4 justify-center">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section animated-gradient-hero relative overflow-hidden">
+        <!-- Floating Blobs -->
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-blob hero-blob-3"></div>
+
+        <div class="container-custom relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Hero Content -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm mb-6">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span class="text-sm font-medium text-gray-600">Premium Beauty & Medical Clinic</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                        Reveal Your
+                        <span class="gradient-text">Natural Beauty</span>
+                        With Expert Care
+                    </h1>
+
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Experience luxury aesthetic treatments with cutting-edge technology and certified specialists. Your journey to radiant skin and healthy hair starts here.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mb-10">
+                        <button class="btn btn-primary text-lg px-8 py-4" data-modal="booking">
+                            <i class="fas fa-calendar-check"></i> Book Consultation
+                        </button>
+                        <a href="services.html" class="btn btn-secondary text-lg px-8 py-4">
+                            <i class="fas fa-arrow-right"></i> Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fas fa-award text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">ISO Certified</p>
+                                <p class="text-xs text-gray-500">Medical Grade</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-12 h-12 rounded-xl bg-blue/10 flex items-center justify-center">
+                                <i class="fas fa-user-md text-blue text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">50+ Experts</p>
+                                <p class="text-xs text-gray-500">Certified Doctors</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fas fa-star text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">4.9 Rating</p>
+                                <p class="text-xs text-gray-500">10K+ Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="relative hidden lg:block" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div class="hero-floating-card rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=700&fit=crop" alt="Luxury Clinic" class="w-full h-[500px] object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                            
+                            <!-- Floating Card 1 -->
+                            <div class="absolute bottom-6 left-6 right-6 glass p-4 rounded-2xl floating floating-delay-1">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                                        <i class="fas fa-check text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-dark">Treatment Complete</p>
+                                        <p class="text-sm text-gray-500">Skin Rejuvenation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stats Cards -->
+                        <div class="absolute -left-10 top-20 glass p-4 rounded-2xl floating floating-delay-2">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+                                    <i class="fas fa-smile"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-lg">98%</p>
+                                    <p class="text-xs text-gray-500">Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -right-5 top-40 glass p-4 rounded-2xl floating-reverse floating-delay-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-blue flex items-center justify-center text-white">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-lg">15K+</p>
+                                    <p class="text-xs text-gray-500">Happy Patients</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Elements -->
+                        <div class="absolute -right-16 bottom-32 w-32 h-32 rounded-full bg-primary/10 blur-3xl"></div>
+                        <div class="absolute -left-10 bottom-10 w-24 h-24 rounded-full bg-blue/10 blur-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Divider -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F8FAFC"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Search Bar Section -->
+    <section class="py-8 -mt-10 relative z-20">
+        <div class="container-custom">
+            <div class="glass-card p-6 max-w-4xl mx-auto" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1 relative">
+                        <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" placeholder="Search treatments, conditions..." class="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-gray-100 focus:border-primary focus:outline-none transition">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-map-marker-alt absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <select class="w-full md:w-48 pl-12 pr-4 py-4 rounded-xl border-2 border-gray-100 focus:border-primary focus:outline-none transition appearance-none bg-white">
+                            <option>All Locations</option>
+                            <option>Dhaka</option>
+                            <option>Chittagong</option>
+                            <option>Sylhet</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary px-8">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Carousel Section -->
+    <section class="section-padding-lg">
+        <div class="container-custom">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="badge badge-green mb-4">
+                    <i class="fas fa-spa"></i> Our Services
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Premium <span class="gradient-text">Treatments</span> & Services
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Discover our comprehensive range of aesthetic and medical treatments designed to enhance your natural beauty.
+                </p>
+            </div>
+
+            <!-- Carousel -->
+            <div class="carousel-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="carousel-track">
+                    <!-- Service Card 1 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card overflow-hidden group">
+                            <div class="h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop" alt="Hair Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i class="fas fa-cut text-xl text-primary group-hover:text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">Hair Care</h3>
+                                <p class="text-gray-600 text-sm mb-4">Advanced hair restoration, PRP therapy, and personalized treatment plans for healthy, beautiful hair.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">PRP Therapy</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Hair Transplant</span>
+                                </div>
+                                <a href="hair-care.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                                    Explore <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card overflow-hidden group">
+                            <div class="h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop" alt="Skin Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i class="fas fa-leaf text-xl text-primary group-hover:text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">Skin Care</h3>
+                                <p class="text-gray-600 text-sm mb-4">Comprehensive skincare including facials, chemical peels, and customized treatment protocols.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Facials</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Peels</span>
+                                </div>
+                                <a href="skin-care.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                                    Explore <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card overflow-hidden group">
+                            <div class="h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=400&h=300&fit=crop" alt="Laser Treatments" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i class="fas fa-bolt text-xl text-primary group-hover:text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">Laser Treatments</h3>
+                                <p class="text-gray-600 text-sm mb-4">State-of-the-art laser technology for hair removal, skin resurfacing, and pigmentation.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Laser Hair Removal</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Resurfacing</span>
+                                </div>
+                                <a href="laser-treatments.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                                    Explore <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card overflow-hidden group">
+                            <div class="h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&h=300&fit=crop" alt="Anti-Aging" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i class="fas fa-hourglass-half text-xl text-primary group-hover:text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">Anti-Aging</h3>
+                                <p class="text-gray-600 text-sm mb-4">Revolutionary anti-aging treatments including Botox, fillers, and skin tightening procedures.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Botox</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Fillers</span>
+                                </div>
+                                <a href="anti-aging.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                                    Explore <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card overflow-hidden group">
+                            <div class="h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop" alt="Bridal Packages" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i class="fas fa-gem text-xl text-primary group-hover:text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">Bridal Packages</h3>
+                                <p class="text-gray-600 text-sm mb-4">Complete bridal transformation packages including pre-wedding and wedding day treatments.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Pre-Wedding</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Makeup</span>
+                                </div>
+                                <a href="bridal-packages.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                                    Explore <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card overflow-hidden group">
+                            <div class="h-56 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop" alt="Wellness & Spa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                                    <i class="fas fa-spa text-xl text-primary group-hover:text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">Wellness & Spa</h3>
+                                <p class="text-gray-600 text-sm mb-4">Relaxing spa treatments, body massages, and wellness therapies for complete rejuvenation.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Massages</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Aromatherapy</span>
+                                </div>
+                                <a href="wellness-spa.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                                    Explore <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <button class="carousel-btn prev hidden md:flex"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next hidden md:flex"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="services.html" class="btn btn-ghost">
+                    View All Services <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section-padding bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-blue to-primary"></div>
+        
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="stat-number" data-count="50" data-suffix="+">0</div>
+                    <div class="stat-label">Expert Specialists</div>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon" style="color: var(--medical-blue);">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number" data-count="15000" data-suffix="+">0</div>
+                    <div class="stat-label">Happy Patients</div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-number" data-count="25000" data-suffix="+">0</div>
+                    <div class="stat-label">Successful Treatments</div>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon" style="color: var(--medical-blue);">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-count="15" data-suffix="+">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding-lg gradient-bg-soft">
+        <div class="container-custom">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="badge badge-blue mb-4">
+                    <i class="fas fa-star"></i> Why Choose Us
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    The GitLink <span class="gradient-text">Difference</span>
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Experience the perfect blend of medical expertise and luxury spa comfort.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Certified Specialists</h3>
+                    <p class="text-gray-600">Our team consists of board-certified dermatologists and aesthetic practitioners with years of experience.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Advanced Technology</h3>
+                    <p class="text-gray-600">We use the latest FDA-approved equipment and cutting-edge treatment techniques for optimal results.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Personalized Care</h3>
+                    <p class="text-gray-600">Every treatment plan is customized to your unique needs, ensuring the best possible outcomes.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hygiene & Safety</h3>
+                    <p class="text-gray-600">Strict sterilization protocols and premium safety standards for your complete peace of mind.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Modern Equipment</h3>
+                    <p class="text-gray-600">State-of-the-art facilities equipped with the most advanced medical and aesthetic devices.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Luxury Experience</h3>
+                    <p class="text-gray-600">Enjoy a premium, relaxing environment that combines medical expertise with spa-like comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Packages Section -->
+    <section class="section-padding-lg">
+        <div class="container-custom">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="badge badge-green mb-4">
+                    <i class="fas fa-gift"></i> Special Packages
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Treatment <span class="gradient-text">Packages</span>
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Choose from our carefully curated packages designed for complete transformation.
+                </p>
+            </div>
+
+            <!-- Packages Carousel -->
+            <div class="carousel-container carousel-packages" data-aos="fade-up" data-aos-delay="200">
+                <div class="carousel-track">
+                    <!-- Package 1 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card p-8 h-full flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+                                    <i class="fas fa-sun text-2xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold">Glow Starter</h3>
+                                    <p class="text-gray-500">Perfect for beginners</p>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <span class="text-4xl font-bold text-primary">৳15,000</span>
+                                <span class="text-gray-500">/package</span>
+                            </div>
+                            <ul class="space-y-3 mb-8 flex-grow">
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>Basic Facial Treatment</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>Skin Consultation</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>1 Session Laser Hair Removal</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>Mini Spa Treatment</span>
+                                </li>
+                            </ul>
+                            <button class="btn btn-secondary w-full" data-modal="booking">Book Package</button>
+                        </div>
+                    </div>
+
+                    <!-- Package 2 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card p-8 h-full flex flex-col relative overflow-hidden">
+                            <div class="absolute top-4 right-4">
+                                <span class="badge badge-green">Popular</span>
+                            </div>
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                                    <i class="fas fa-star text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold">Radiance Plus</h3>
+                                    <p class="text-gray-500">Most popular choice</p>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <span class="text-4xl font-bold gradient-text">৳35,000</span>
+                                <span class="text-gray-500">/package</span>
+                            </div>
+                            <ul class="space-y-3 mb-8 flex-grow">
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>Premium Facial (3 sessions)</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>Chemical Peel Treatment</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>6 Session Laser Hair Removal</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>Full Body Massage</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-primary"></i>
+                                    <span>Hair Spa Treatment</span>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary w-full" data-modal="booking">Book Package</button>
+                        </div>
+                    </div>
+
+                    <!-- Package 3 -->
+                    <div class="carousel-slide">
+                        <div class="glass-card p-8 h-full flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-2xl bg-blue/10 flex items-center justify-center">
+                                    <i class="fas fa-gem text-2xl text-blue"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold">Ultimate Transformation</h3>
+                                    <p class="text-gray-500">Complete makeover</p>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <span class="text-4xl font-bold text-blue">৳75,000</span>
+                                <span class="text-gray-500">/package</span>
+                            </div>
+                            <ul class="space-y-3 mb-8 flex-grow">
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-blue"></i>
+                                    <span>All Radiance Plus Features</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-blue"></i>
+                                    <span>PRP Hair Treatment</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-blue"></i>
+                                    <span>Full Body Laser Package</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-blue"></i>
+                                    <span>Anti-Aging Treatment</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check text-blue"></i>
+                                    <span>VIP Aftercare Support</span>
+                                </li>
+                            </ul>
+                            <button class="btn btn-ghost w-full" data-modal="booking">Book Package</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <button class="carousel-btn prev hidden md:flex"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next hidden md:flex"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Pricing Section -->
+    <section class="section-padding-lg bg-white">
+        <div class="container-custom">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="badge badge-green mb-4">
+                    <i class="fas fa-crown"></i> Membership Plans
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Exclusive <span class="gradient-text">Membership</span> Benefits
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Join our membership program and enjoy year-round exclusive benefits and discounts.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Silver Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Silver</span>
+                        <h3 class="pricing-name">Silver Member</h3>
+                        <div class="pricing-price">
+                            ৳9,999<span>/year</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-primary"></i> 10% Off All Treatments</li>
+                        <li><i class="fas fa-check text-primary"></i> Priority Booking</li>
+                        <li><i class="fas fa-check text-primary"></i> Free Consultation</li>
+                        <li><i class="fas fa-check text-primary"></i> Birthday Special Offer</li>
+                        <li><i class="fas fa-check text-primary"></i> Newsletter Updates</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full" data-modal="booking">Join Now</button>
+                </div>
+
+                <!-- Gold Plan -->
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Best Value</span>
+                        <h3 class="pricing-name">Gold Member</h3>
+                        <div class="pricing-price">
+                            ৳24,999<span>/year</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 25% Off All Treatments</li>
+                        <li><i class="fas fa-check"></i> VIP Priority Booking</li>
+                        <li><i class="fas fa-check"></i> 4 Free Facials</li>
+                        <li><i class="fas fa-check"></i> Free Body Analysis</li>
+                        <li><i class="fas fa-check"></i> Exclusive Events Access</li>
+                        <li><i class="fas fa-check"></i> Personal Care Advisor</li>
+                    </ul>
+                    <button class="btn btn-primary w-full" style="background: white; color: var(--primary-green);">Join Now</button>
+                </div>
+
+                <!-- Platinum Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Platinum</span>
+                        <h3 class="pricing-name">Platinum Member</h3>
+                        <div class="pricing-price text-blue">
+                            ৳49,999<span>/year</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-blue"></i> 40% Off All Treatments</li>
+                        <li><i class="fas fa-check text-blue"></i> Unlimited Consultations</li>
+                        <li><i class="fas fa-check text-blue"></i> 12 Free Spa Sessions</li>
+                        <li><i class="fas fa-check text-blue"></i> Premium Product Discounts</li>
+                        <li><i class="fas fa-check text-blue"></i> Home Service Option</li>
+                        <li><i class="fas fa-check text-blue"></i> 24/7 VIP Support</li>
+                    </ul>
+                    <button class="btn btn-ghost w-full" data-modal="booking">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding-lg relative overflow-hidden">
+        <div class="cta-blob cta-blob-1"></div>
+        <div class="cta-blob cta-blob-2"></div>
+        
+        <div class="container-custom relative z-10">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <div class="w-20 h-20 rounded-3xl bg-primary/20 flex items-center justify-center mx-auto mb-8">
+                    <i class="fas fa-calendar-alt text-4xl text-primary"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                    Ready to Transform Your Look?
+                </h2>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Book your consultation today and let our experts create a personalized treatment plan just for you.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="btn btn-primary text-lg px-10 py-5" data-modal="booking">
+                        <i class="fas fa-calendar-check"></i> Book Free Consultation
+                    </button>
+                    <a href="tel:+8801700000000" class="btn btn-secondary text-lg px-10 py-5" style="border-color: white; color: white;">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+
+                <div class="mt-16 flex flex-wrap justify-center gap-8">
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <i class="fas fa-check-circle text-primary"></i>
+                        <span>Free Initial Consultation</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <i class="fas fa-check-circle text-primary"></i>
+                        <span>No Obligation</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <i class="fas fa-check-circle text-primary"></i>
+                        <span>Expert Advice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                            <i class="fas fa-spa text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">GitLink</h3>
+                            <p class="text-xs text-gray-400">Hair & Skin Care Clinic</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Premium aesthetic treatments with cutting-edge technology. Your journey to radiant beauty starts here.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="hair-care.html">Hair Care</a></li>
+                        <li><a href="skin-care.html">Skin Care</a></li>
+                        <li><a href="laser-treatments.html">Laser Treatments</a></li>
+                        <li><a href="anti-aging.html">Anti-Aging</a></li>
+                        <li><a href="bridal-packages.html">Bridal Packages</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>123 Beauty Lane, Gulshan, Dhaka 1212, Bangladesh</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <a href="tel:+8801700000000">+880 1700-000-000</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <a href="mailto:info@hairskinclinic.com">info@hairskinclinic.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-clock text-primary"></i>
+                            <span>Sat - Thu: 9:00 AM - 8:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    © 2024 GitLink Hair & Skin Care Clinic. All rights reserved.
+                </p>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-primary">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary">Terms of Service</a>
+                    <a href="#" class="hover:text-primary">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content relative">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-calendar-check text-2xl text-primary"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Book Consultation</h2>
+                <p class="text-gray-500">Schedule your free consultation with our experts</p>
+            </div>
+            <div class="modal-body">
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Full Name</label>
+                            <input type="text" class="form-input" placeholder="Your name" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" class="form-input" placeholder="+880 1XXX-XXXXXX" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email Address</label>
+                        <input type="email" class="form-input" placeholder="your@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Service Interest</label>
+                        <select class="form-input">
+                            <option>Select a service</option>
+                            <option>Hair Care</option>
+                            <option>Skin Care</option>
+                            <option>Laser Treatments</option>
+                            <option>Anti-Aging</option>
+                            <option>Bridal Packages</option>
+                            <option>Wellness & Spa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Preferred Date</label>
+                        <input type="date" class="form-input" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Message (Optional)</label>
+                        <textarea class="form-input" placeholder="Tell us about your concerns..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full py-4">
+                        <i class="fas fa-calendar-check"></i> Confirm Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="sticky-cta">
+        <button class="btn btn-secondary" data-modal="booking">
+            <i class="fas fa-phone"></i> Call
+        </button>
+        <button class="btn btn-primary" data-modal="booking">
+            <i class="fas fa-calendar-check"></i> Book Now
+        </button>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
