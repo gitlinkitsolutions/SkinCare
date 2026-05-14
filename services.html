@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | GitLink Hair & Skin Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#00BF63', blue: '#38B6FF', dark: '#0F172A', red: '#FF3131', bg: '#F8FAFC' }, fontFamily: { sans: ['Inter', 'Poppins', 'sans-serif'] } } } }</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="animated-gradient">
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                        <i class="fas fa-spa text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-dark leading-tight">GitLink</h1>
+                        <p class="text-xs text-gray-500">Hair & Skin Care Clinic</p>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link text-primary">Services</a>
+                    <div class="dropdown relative">
+                        <a href="#" class="nav-link flex items-center gap-1">Services <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="hair-care.html" class="dropdown-item"><i class="fas fa-cut text-primary"></i> Hair Care</a>
+                            <a href="skin-care.html" class="dropdown-item"><i class="fas fa-leaf text-primary"></i> Skin Care</a>
+                            <a href="laser-treatments.html" class="dropdown-item"><i class="fas fa-bolt text-primary"></i> Laser Treatments</a>
+                            <a href="anti-aging.html" class="dropdown-item"><i class="fas fa-hourglass-half text-primary"></i> Anti-Aging</a>
+                            <a href="bridal-packages.html" class="dropdown-item"><i class="fas fa-gem text-primary"></i> Bridal Packages</a>
+                            <a href="wellness-spa.html" class="dropdown-item"><i class="fas fa-spa text-primary"></i> Wellness & Spa</a>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="btn btn-primary hidden sm:inline-flex" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Now</button>
+                    <button class="mobile-menu-toggle lg:hidden w-10 h-10 flex items-center justify-center"><i class="fas fa-bars text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex items-center justify-between mb-8">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue flex items-center justify-center"><i class="fas fa-spa text-white"></i></div>
+                <span class="font-bold">GitLink Clinic</span>
+            </div>
+            <button class="mobile-menu-close w-10 h-10 flex items-center justify-center"><i class="fas fa-times text-xl"></i></button>
+        </div>
+        <div class="space-y-2">
+            <a href="index.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-home w-6"></i> Home</a>
+            <a href="about.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-info-circle w-6"></i> About Us</a>
+            <a href="services.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium bg-gray-100"><i class="fas fa-concierge-bell w-6"></i> Services</a>
+            <a href="gallery.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-images w-6"></i> Gallery</a>
+            <a href="contact.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-envelope w-6"></i> Contact</a>
+        </div>
+        <div class="mt-8 pt-8 border-t">
+            <button class="btn btn-primary w-full" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Consultation</button>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="hero-blob hero-blob-1 opacity-30"></div>
+        <div class="container-custom relative z-10">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <span class="badge badge-green mb-4"><i class="fas fa-concierge-bell"></i> Our Services</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Premium <span class="gradient-text">Treatments</span> & Services</h1>
+                <p class="text-xl text-gray-600">Comprehensive aesthetic and medical treatments tailored to your unique needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section-padding pt-0">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hair Care -->
+                <div class="glass-card overflow-hidden group" data-aos="fade-up" data-aos-delay="0">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop" alt="Hair Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-all">
+                            <i class="fas fa-cut text-xl text-primary group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Hair Care</h3>
+                        <p class="text-gray-600 text-sm mb-4">Advanced hair restoration, PRP therapy, and customized treatment plans for healthy, beautiful hair.</p>
+                        <a href="hair-care.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                            Learn More <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Skin Care -->
+                <div class="glass-card overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop" alt="Skin Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-all">
+                            <i class="fas fa-leaf text-xl text-primary group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Skin Care</h3>
+                        <p class="text-gray-600 text-sm mb-4">Comprehensive skincare including facials, chemical peels, microdermabrasion, and customized protocols.</p>
+                        <a href="skin-care.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                            Learn More <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Laser Treatments -->
+                <div class="glass-card overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=400&h=300&fit=crop" alt="Laser Treatments" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-all">
+                            <i class="fas fa-bolt text-xl text-primary group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Laser Treatments</h3>
+                        <p class="text-gray-600 text-sm mb-4">State-of-the-art laser technology for hair removal, skin resurfacing, and pigmentation treatment.</p>
+                        <a href="laser-treatments.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                            Learn More <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Anti-Aging -->
+                <div class="glass-card overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&h=300&fit=crop" alt="Anti-Aging" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-all">
+                            <i class="fas fa-hourglass-half text-xl text-primary group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Anti-Aging</h3>
+                        <p class="text-gray-600 text-sm mb-4">Revolutionary anti-aging treatments including Botox, fillers, and skin tightening procedures.</p>
+                        <a href="anti-aging.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                            Learn More <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bridal Packages -->
+                <div class="glass-card overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop" alt="Bridal Packages" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-all">
+                            <i class="fas fa-gem text-xl text-primary group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Bridal Packages</h3>
+                        <p class="text-gray-600 text-sm mb-4">Complete bridal transformation packages including pre-wedding and wedding day treatments.</p>
+                        <a href="bridal-packages.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                            Learn More <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Wellness & Spa -->
+                <div class="glass-card overflow-hidden group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop" alt="Wellness & Spa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-all">
+                            <i class="fas fa-spa text-xl text-primary group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Wellness & Spa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Relaxing spa treatments, body massages, and wellness therapies for complete rejuvenation.</p>
+                        <a href="wellness-spa.html" class="text-primary font-semibold flex items-center gap-2 group/link">
+                            Learn More <i class="fas fa-arrow-right group-hover/link:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section-padding-lg bg-white">
+        <div class="container-custom">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="badge badge-green mb-4"><i class="fas fa-tag"></i> Pricing</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Transparent <span class="gradient-text">Pricing</span></h2>
+                <p class="text-gray-600">Quality care at affordable prices. No hidden costs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Basic</span>
+                        <h3 class="pricing-name">Facial Treatment</h3>
+                        <div class="pricing-price text-primary">৳3,500<span>/session</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-primary"></i> Deep Cleansing</li>
+                        <li><i class="fas fa-check text-primary"></i> Exfoliation</li>
+                        <li><i class="fas fa-check text-primary"></i> Face Massage</li>
+                        <li><i class="fas fa-check text-primary"></i> Mask Application</li>
+                    </ul>
+                    <button class="btn btn-secondary w-full" data-modal="booking">Book Now</button>
+                </div>
+
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Popular</span>
+                        <h3 class="pricing-name">Hair PRP</h3>
+                        <div class="pricing-price">৳8,000<span>/session</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Scalp Analysis</li>
+                        <li><i class="fas fa-check"></i> PRP Injection</li>
+                        <li><i class="fas fa-check"></i> Growth Factors</li>
+                        <li><i class="fas fa-check"></i> Aftercare Kit</li>
+                    </ul>
+                    <button class="btn btn-primary w-full" style="background: white; color: var(--primary-green);">Book Now</button>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Premium</span>
+                        <h3 class="pricing-name">Laser Hair Removal</h3>
+                        <div class="pricing-price text-blue">৳12,000<span>/area</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-blue"></i> Full Package (6 sessions)</li>
+                        <li><i class="fas fa-check text-blue"></i> Any Body Area</li>
+                        <li><i class="fas fa-check text-blue"></i> Touch-up Sessions</li>
+                        <li><i class="fas fa-check text-blue"></i> Cooling Gel</li>
+                    </ul>
+                    <button class="btn btn-ghost w-full" data-modal="booking">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section-padding-lg relative overflow-hidden">
+        <div class="cta-blob cta-blob-1"></div>
+        <div class="cta-blob cta-blob-2"></div>
+        <div class="container-custom relative z-10 text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-gray-300 mb-10">Book your consultation today and let our experts guide you.</p>
+            <button class="btn btn-primary text-lg px-10 py-4" data-modal="booking">
+                <i class="fas fa-calendar-check"></i> Book Free Consultation
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center"><i class="fas fa-spa text-white text-xl"></i></div>
+                        <div><h3 class="text-lg font-bold text-white">GitLink</h3><p class="text-xs text-gray-400">Hair & Skin Care Clinic</p></div>
+                    </div>
+                    <p class="text-gray-400 mb-6">Premium aesthetic treatments with cutting-edge technology.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="hair-care.html">Hair Care</a></li>
+                        <li><a href="skin-care.html">Skin Care</a></li>
+                        <li><a href="laser-treatments.html">Laser Treatments</a></li>
+                        <li><a href="anti-aging.html">Anti-Aging</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links space-y-4">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-primary"></i><span>Gulshan, Dhaka</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+8801700000000">+880 1700-000-000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 text-sm">© 2024 GitLink Hair & Skin Care Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content relative">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4"><i class="fas fa-calendar-check text-2xl text-primary"></i></div>
+                <h2 class="text-2xl font-bold">Book Consultation</h2>
+                <p class="text-gray-500">Schedule your free consultation</p>
+            </div>
+            <div class="modal-body">
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div><label class="block text-sm font-medium mb-2">Name</label><input type="text" class="form-input" placeholder="Your name" required></div>
+                        <div><label class="block text-sm font-medium mb-2">Phone</label><input type="tel" class="form-input" placeholder="+880 1XXX-XXXXXX" required></div>
+                    </div>
+                    <div><label class="block text-sm font-medium mb-2">Service</label>
+                        <select class="form-input">
+                            <option>Select a service</option>
+                            <option>Hair Care</option><option>Skin Care</option><option>Laser Treatments</option>
+                            <option>Anti-Aging</option><option>Bridal Packages</option>
+                        </select>
+                    </div>
+                    <div><label class="block text-sm font-medium mb-2">Preferred Date</label><input type="date" class="form-input" required></div>
+                    <button type="submit" class="btn btn-primary w-full py-4"><i class="fas fa-calendar-check"></i> Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-cta">
+        <button class="btn btn-secondary" data-modal="booking"><i class="fas fa-phone"></i> Call</button>
+        <button class="btn btn-primary" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Now</button>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out', once: true });</script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

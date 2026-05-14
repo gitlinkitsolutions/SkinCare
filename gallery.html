@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | GitLink Hair & Skin Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#00BF63', blue: '#38B6FF', dark: '#0F172A', red: '#FF3131', bg: '#F8FAFC' }, fontFamily: { sans: ['Inter', 'Poppins', 'sans-serif'] } } } }</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="animated-gradient">
+    <div class="scroll-progress"></div>
+    <nav class="navbar fixed top-0 left-0 right-0 z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center"><i class="fas fa-spa text-white text-xl"></i></div><div><h1 class="text-lg font-bold text-dark leading-tight">GitLink</h1><p class="text-xs text-gray-500">Hair & Skin Care Clinic</p></div></a>
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About Us</a>
+                    <div class="dropdown relative">
+                        <a href="services.html" class="nav-link flex items-center gap-1">Services <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="hair-care.html" class="dropdown-item"><i class="fas fa-cut text-primary"></i> Hair Care</a>
+                            <a href="skin-care.html" class="dropdown-item"><i class="fas fa-leaf text-primary"></i> Skin Care</a>
+                            <a href="laser-treatments.html" class="dropdown-item"><i class="fas fa-bolt text-primary"></i> Laser Treatments</a>
+                            <a href="anti-aging.html" class="dropdown-item"><i class="fas fa-hourglass-half text-primary"></i> Anti-Aging</a>
+                            <a href="bridal-packages.html" class="dropdown-item"><i class="fas fa-gem text-primary"></i> Bridal Packages</a>
+                            <a href="wellness-spa.html" class="dropdown-item"><i class="fas fa-spa text-primary"></i> Wellness & Spa</a>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-link text-primary">Gallery</a><a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="flex items-center gap-4"><button class="btn btn-primary hidden sm:inline-flex" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Now</button><button class="mobile-menu-toggle lg:hidden w-10 h-10 flex items-center justify-center"><i class="fas fa-bars text-xl"></i></button></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex items-center justify-between mb-8"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue flex items-center justify-center"><i class="fas fa-spa text-white"></i></div><span class="font-bold">GitLink Clinic</span></div><button class="mobile-menu-close w-10 h-10 flex items-center justify-center"><i class="fas fa-times text-xl"></i></button></div>
+        <div class="space-y-2">
+            <a href="index.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-home w-6"></i> Home</a>
+            <a href="about.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-info-circle w-6"></i> About Us</a>
+            <a href="services.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-concierge-bell w-6"></i> Services</a>
+            <a href="gallery.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium bg-gray-100"><i class="fas fa-images w-6"></i> Gallery</a>
+            <a href="contact.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-envelope w-6"></i> Contact</a>
+        </div>
+        <div class="mt-8 pt-8 border-t"><button class="btn btn-primary w-full" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Consultation</button></div>
+    </div>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="hero-blob hero-blob-1 opacity-30"></div>
+        <div class="container-custom relative z-10">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <span class="badge badge-green mb-4"><i class="fas fa-images"></i> Our Gallery</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Before & After <span class="gradient-text">Transformations</span></h1>
+                <p class="text-xl text-gray-600">See the incredible results of our treatments through real patient transformations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="pb-12">
+        <div class="container-custom">
+            <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up">
+                <button class="gallery-filter-btn active px-6 py-3 rounded-full bg-primary text-white font-medium transition" data-filter="all">All</button>
+                <button class="gallery-filter-btn px-6 py-3 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition" data-filter="hair">Hair</button>
+                <button class="gallery-filter-btn px-6 py-3 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition" data-filter="skin">Skin</button>
+                <button class="gallery-filter-btn px-6 py-3 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition" data-filter="laser">Laser</button>
+                <button class="gallery-filter-btn px-6 py-3 rounded-full bg-white text-gray-600 font-medium hover:bg-gray-100 transition" data-filter="spa">Spa</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section-padding pt-0">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="hair" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=400&h=300&fit=crop" alt="Hair Transformation">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Hair Restoration</h4>
+                        <p class="text-gray-200 text-sm">Before & After PRP Treatment</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="skin" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop" alt="Skin Glow">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Facial Treatment</h4>
+                        <p class="text-gray-200 text-sm">Signature Facial Glow</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="laser" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=400&h=300&fit=crop" alt="Laser Treatment">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Laser Hair Removal</h4>
+                        <p class="text-gray-200 text-sm">Advanced Diode Laser</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="spa" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop" alt="Spa Treatment">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Spa Experience</h4>
+                        <p class="text-gray-200 text-sm">Luxury Spa Retreat</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="skin" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&h=300&fit=crop" alt="Anti-Aging">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Anti-Aging Treatment</h4>
+                        <p class="text-gray-200 text-sm">Botox & Fillers</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="hair" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop" alt="Hair Care">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Hair Spa</h4>
+                        <p class="text-gray-200 text-sm">Deep Conditioning</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="laser" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1570598916938-5774c5f7f1dd?w=400&h=300&fit=crop" alt="Pigmentation">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Pigmentation Treatment</h4>
+                        <p class="text-gray-200 text-sm">Laser Therapy</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-category="spa" data-aos="fade-up" data-aos-delay="700">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=300&fit=crop" alt="Massage">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">Massage Therapy</h4>
+                        <p class="text-gray-200 text-sm">Deep Tissue Massage</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item" data-category="skin" data-aos="fade-up" data-aos-delay="800">
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=400&h=300&fit=crop" alt="HydraFacial">
+                    <div class="gallery-overlay">
+                        <h4 class="text-white font-bold text-lg">HydraFacial</h4>
+                        <p class="text-gray-200 text-sm">Instant Glow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Skin Analyzer Section -->
+    <section class="section-padding-lg bg-white">
+        <div class="container-custom">
+            <div class="ai-analyzer" data-aos="fade-up">
+                <div class="ai-grid-lines"></div>
+                
+                <div class="relative z-10">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="text-white">
+                            <span class="badge mb-4" style="background: rgba(0,191,99,0.2); color: #00BF63;"><i class="fas fa-robot"></i> AI Technology</span>
+                            <h2 class="text-3xl md:text-4xl font-bold mb-6">AI-Powered <span class="text-primary">Skin Analysis</span></h2>
+                            <p class="text-gray-300 text-lg mb-8">Experience the future of skincare with our advanced AI skin analyzer. Get personalized insights and treatment recommendations based on your unique skin profile.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center"><i class="fas fa-check text-primary"></i></div>
+                                    <span>Instant skin type detection</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center"><i class="fas fa-check text-primary"></i></div>
+                                    <span>Personalized treatment plan</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center"><i class="fas fa-check text-primary"></i></div>
+                                    <span>Progress tracking over time</span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary text-lg px-8 py-4" data-action="analyze">
+                                <i class="fas fa-scan"></i> Start AI Skin Analysis
+                            </button>
+                        </div>
+
+                        <div class="relative">
+                            <div class="ai-face-outline">
+                                <svg viewBox="0 0 200 280" class="w-full h-auto">
+                                    <!-- Face outline -->
+                                    <ellipse cx="100" cy="120" rx="80" ry="100" fill="none" stroke="rgba(0,191,99,0.3)" stroke-width="2" stroke-dasharray="5,5"/>
+                                    <!-- Grid lines -->
+                                    <line x1="100" y1="20" x2="100" y2="220" stroke="rgba(0,191,99,0.2)" stroke-width="1"/>
+                                    <line x1="20" y1="120" x2="180" y2="120" stroke="rgba(0,191,99,0.2)" stroke-width="1"/>
+                                    <!-- Face features -->
+                                    <circle cx="70" cy="100" r="15" fill="none" stroke="rgba(0,191,99,0.5)" stroke-width="2"/>
+                                    <circle cx="130" cy="100" r="15" fill="none" stroke="rgba(0,191,99,0.5)" stroke-width="2"/>
+                                    <path d="M70 160 Q100 180 130 160" fill="none" stroke="rgba(0,191,99,0.5)" stroke-width="2"/>
+                                    <ellipse cx="100" cy="60" rx="8" ry="12" fill="rgba(0,191,99,0.3)"/>
+                                </svg>
+                                <div class="ai-scan-line"></div>
+                            </div>
+                            <!-- Floating data points -->
+                            <div class="absolute top-10 right-0 glass p-3 rounded-xl floating">
+                                <div class="text-xs text-gray-500">Hydration</div>
+                                <div class="text-lg font-bold text-primary">78%</div>
+                            </div>
+                            <div class="absolute bottom-20 left-0 glass p-3 rounded-xl floating floating-delay-2">
+                                <div class="text-xs text-gray-500">Elasticity</div>
+                                <div class="text-lg font-bold text-primary">82%</div>
+                            </div>
+                            <div class="absolute top-1/2 right-0 glass p-3 rounded-xl floating floating-delay-3">
+                                <div class="text-xs text-gray-500">Wrinkles</div>
+                                <div class="text-lg font-bold text-blue">Low</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section-padding-lg relative overflow-hidden">
+        <div class="cta-blob cta-blob-1"></div><div class="cta-blob cta-blob-2"></div>
+        <div class="container-custom relative z-10 text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Begin Your Transformation?</h2>
+            <p class="text-xl text-gray-300 mb-10">Book a consultation and let our experts create your personalized treatment plan</p>
+            <button class="btn btn-primary text-lg px-10 py-4" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Free Consultation</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div><div class="flex items-center gap-3 mb-6"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center"><i class="fas fa-spa text-white text-xl"></i></div><div><h3 class="text-lg font-bold text-white">GitLink</h3><p class="text-xs text-gray-400">Hair & Skin Care Clinic</p></div></div><p class="text-gray-400 mb-6">Premium aesthetic treatments.</p></div>
+                <div><h4 class="footer-title">Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div><h4 class="footer-title">Services</h4><ul class="footer-links"><li><a href="hair-care.html">Hair Care</a></li><li><a href="skin-care.html">Skin Care</a></li><li><a href="laser-treatments.html">Laser</a></li></ul></div>
+                <div><h4 class="footer-title">Contact</h4><ul class="footer-links"><li class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+8801700000000">+880 1700-000-000</a></li></ul></div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center"><p class="text-gray-400 text-sm">© 2024 GitLink Hair & Skin Care Clinic.</p></div>
+        </div>
+    </footer>
+
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content relative">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header"><div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4"><i class="fas fa-calendar-check text-2xl text-primary"></i></div><h2 class="text-2xl font-bold">Book Consultation</h2></div>
+            <div class="modal-body">
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4"><div><label class="block text-sm font-medium mb-2">Name</label><input type="text" class="form-input" placeholder="Your name" required></div><div><label class="block text-sm font-medium mb-2">Phone</label><input type="tel" class="form-input" placeholder="+880 1XXX-XXXXXX" required></div></div>
+                    <div><label class="block text-sm font-medium mb-2">Service</label><select class="form-input"><option>General Consultation</option><option>Hair Care</option><option>Skin Care</option><option>Laser</option></select></div>
+                    <div><label class="block text-sm font-medium mb-2">Preferred Date</label><input type="date" class="form-input" required></div>
+                    <button type="submit" class="btn btn-primary w-full py-4"><i class="fas fa-calendar-check"></i> Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-cta"><button class="btn btn-secondary" data-modal="booking"><i class="fas fa-phone"></i> Call</button><button class="btn btn-primary" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Now</button></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out', once: true });</script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
