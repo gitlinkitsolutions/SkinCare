@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about GitLink Hair & Skin Care Clinic - Our story, mission, and commitment to premium aesthetic treatments.">
+    <title>About Us | GitLink Hair & Skin Care Clinic</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00BF63',
+                        blue: '#38B6FF',
+                        dark: '#0F172A',
+                        red: '#FF3131',
+                        bg: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="animated-gradient">
+    
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                        <i class="fas fa-spa text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-dark leading-tight">GitLink</h1>
+                        <p class="text-xs text-gray-500">Hair & Skin Care Clinic</p>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link text-primary">About Us</a>
+                    <div class="dropdown relative">
+                        <a href="services.html" class="nav-link flex items-center gap-1">Services <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="hair-care.html" class="dropdown-item"><i class="fas fa-cut text-primary"></i> Hair Care</a>
+                            <a href="skin-care.html" class="dropdown-item"><i class="fas fa-leaf text-primary"></i> Skin Care</a>
+                            <a href="laser-treatments.html" class="dropdown-item"><i class="fas fa-bolt text-primary"></i> Laser Treatments</a>
+                            <a href="anti-aging.html" class="dropdown-item"><i class="fas fa-hourglass-half text-primary"></i> Anti-Aging</a>
+                            <a href="bridal-packages.html" class="dropdown-item"><i class="fas fa-gem text-primary"></i> Bridal Packages</a>
+                            <a href="wellness-spa.html" class="dropdown-item"><i class="fas fa-spa text-primary"></i> Wellness & Spa</a>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button class="btn btn-primary hidden sm:inline-flex" data-modal="booking">
+                        <i class="fas fa-calendar-check"></i> Book Now
+                    </button>
+                    <button class="mobile-menu-toggle lg:hidden w-10 h-10 flex items-center justify-center">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="flex items-center justify-between mb-8">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                    <i class="fas fa-spa text-white"></i>
+                </div>
+                <span class="font-bold">GitLink Clinic</span>
+            </div>
+            <button class="mobile-menu-close w-10 h-10 flex items-center justify-center">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        
+        <div class="space-y-2">
+            <a href="index.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-home w-6"></i> Home</a>
+            <a href="about.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium bg-gray-100"><i class="fas fa-info-circle w-6"></i> About Us</a>
+            <a href="services.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-concierge-bell w-6"></i> Services</a>
+            <a href="gallery.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-images w-6"></i> Gallery</a>
+            <a href="contact.html" class="block py-3 px-4 rounded-xl hover:bg-gray-100 font-medium"><i class="fas fa-envelope w-6"></i> Contact</a>
+        </div>
+
+        <div class="mt-8 pt-8 border-t">
+            <button class="btn btn-primary w-full" data-modal="booking">
+                <i class="fas fa-calendar-check"></i> Book Consultation
+            </button>
+        </div>
+
+        <div class="mt-8 flex gap-4 justify-center">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="hero-blob hero-blob-1 opacity-30"></div>
+        <div class="hero-blob hero-blob-2 opacity-20"></div>
+        
+        <div class="container-custom relative z-10">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <span class="badge badge-green mb-4">
+                    <i class="fas fa-heart"></i> Our Story
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                    Dedicated to Your <span class="gradient-text">Beauty & Wellness</span>
+                </h1>
+                <p class="text-xl text-gray-600">
+                    Transforming lives through premium aesthetic treatments since 2009
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section-padding pt-0">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Image -->
+                <div class="relative" data-aos="fade-right">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=500&fit=crop" alt="GitLink Clinic" class="w-full h-[450px] object-cover">
+                    </div>
+                    
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-8 -right-8 glass-card p-6 floating">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                                <i class="fas fa-award text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold">15+</p>
+                                <p class="text-gray-500">Years of Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div data-aos="fade-left">
+                    <span class="badge badge-blue mb-4">
+                        <i class="fas fa-building"></i> About GitLink
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Where Science Meets <span class="gradient-text">Beauty</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-6">
+                        GitLink Hair & Skin Care Clinic was founded with a singular vision: to provide world-class aesthetic treatments with a personal touch. Our state-of-the-art facility combines the latest medical technology with a warm, welcoming atmosphere.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        From our humble beginnings in 2009 to becoming one of the most trusted names in Bangladesh's aesthetic industry, we've remained committed to excellence, innovation, and most importantly, our patients' satisfaction.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <span class="font-medium">ISO Certified</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <span class="font-medium">FDA Approved</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <span class="font-medium">Expert Team</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <span class="font-medium">Premium Care</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" data-modal="booking">
+                        <i class="fas fa-calendar-check"></i> Schedule Visit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Mission -->
+                <div class="glass-card p-10" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-gray-600 text-lg">
+                        To provide accessible, high-quality aesthetic treatments that enhance natural beauty while maintaining the highest standards of safety and patient care.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="glass-card p-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue to-primary flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                    <p class="text-gray-600 text-lg">
+                        To be the leading aesthetic clinic in Bangladesh, recognized for excellence in treatment outcomes, innovation, and patient satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section-padding gradient-bg-soft">
+        <div class="container-custom">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="badge badge-green mb-4"><i class="fas fa-star"></i> Why Choose Us</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    What Sets Us <span class="gradient-text">Apart</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Certified Experts</h3>
+                    <p class="text-gray-600">Board-certified dermatologists and trained aestheticians with years of experience.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Latest Technology</h3>
+                    <p class="text-gray-600">State-of-the-art equipment and FDA-approved treatment protocols.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Personalized Care</h3>
+                    <p class="text-gray-600">Customized treatment plans tailored to your unique needs and goals.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Safe Environment</h3>
+                    <p class="text-gray-600">Strict hygiene protocols and premium sterilization standards.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Proven Results</h3>
+                    <p class="text-gray-600">Thousands of satisfied patients with visible, lasting results.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Aftercare Support</h3>
+                    <p class="text-gray-600">Comprehensive aftercare and follow-up for optimal recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-icon"><i class="fas fa-user-md"></i></div>
+                    <div class="stat-number" data-count="50" data-suffix="+">0</div>
+                    <div class="stat-label">Expert Specialists</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon" style="color: var(--medical-blue);"><i class="fas fa-users"></i></div>
+                    <div class="stat-number" data-count="15000" data-suffix="+">0</div>
+                    <div class="stat-label">Happy Patients</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-procedures"></i></div>
+                    <div class="stat-number" data-count="25000" data-suffix="+">0</div>
+                    <div class="stat-label">Treatments Done</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon" style="color: var(--medical-blue);"><i class="fas fa-award"></i></div>
+                    <div class="stat-number" data-count="15" data-suffix="+">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section-padding-lg relative overflow-hidden">
+        <div class="cta-blob cta-blob-1"></div>
+        <div class="cta-blob cta-blob-2"></div>
+        
+        <div class="container-custom relative z-10 text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Experience the GitLink Difference
+            </h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                Schedule your consultation today and discover why we're the most trusted name in aesthetic care.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="btn btn-primary text-lg px-10 py-4" data-modal="booking">
+                    <i class="fas fa-calendar-check"></i> Book Consultation
+                </button>
+                <a href="contact.html" class="btn btn-secondary text-lg px-10 py-4" style="border-color: white; color: white;">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-blue flex items-center justify-center">
+                            <i class="fas fa-spa text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">GitLink</h3>
+                            <p class="text-xs text-gray-400">Hair & Skin Care Clinic</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">Premium aesthetic treatments with cutting-edge technology.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="hair-care.html">Hair Care</a></li>
+                        <li><a href="skin-care.html">Skin Care</a></li>
+                        <li><a href="laser-treatments.html">Laser Treatments</a></li>
+                        <li><a href="anti-aging.html">Anti-Aging</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links space-y-4">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-primary"></i><span>123 Beauty Lane, Gulshan, Dhaka</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+8801700000000">+880 1700-000-000</a></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:info@hairskinclinic.com">info@hairskinclinic.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 text-sm">© 2024 GitLink Hair & Skin Care Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content relative">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-calendar-check text-2xl text-primary"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Book Consultation</h2>
+                <p class="text-gray-500">Schedule your free consultation</p>
+            </div>
+            <div class="modal-body">
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div><label class="block text-sm font-medium mb-2">Name</label><input type="text" class="form-input" placeholder="Your name" required></div>
+                        <div><label class="block text-sm font-medium mb-2">Phone</label><input type="tel" class="form-input" placeholder="+880 1XXX-XXXXXX" required></div>
+                    </div>
+                    <div><label class="block text-sm font-medium mb-2">Email</label><input type="email" class="form-input" placeholder="your@email.com"></div>
+                    <div><label class="block text-sm font-medium mb-2">Service</label>
+                        <select class="form-input">
+                            <option>Select a service</option>
+                            <option>Hair Care</option>
+                            <option>Skin Care</option>
+                            <option>Laser Treatments</option>
+                            <option>Anti-Aging</option>
+                            <option>Bridal Packages</option>
+                        </select>
+                    </div>
+                    <div><label class="block text-sm font-medium mb-2">Preferred Date</label><input type="date" class="form-input" required></div>
+                    <button type="submit" class="btn btn-primary w-full py-4"><i class="fas fa-calendar-check"></i> Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-cta">
+        <button class="btn btn-secondary" data-modal="booking"><i class="fas fa-phone"></i> Call</button>
+        <button class="btn btn-primary" data-modal="booking"><i class="fas fa-calendar-check"></i> Book Now</button>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out', once: true });</script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
