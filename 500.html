@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Error | GitLink Hair & Skin Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#00BF63', blue: '#38B6FF', dark: '#0F172A', bg: '#F8FAFC' }, fontFamily: { sans: ['Inter', 'Poppins', 'sans-serif'] } } } }</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="animated-gradient overflow-hidden">
+    <div class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Animated blobs -->
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+
+        <div class="text-center relative z-10 px-6" data-aos="fade-up">
+            <!-- 500 Number -->
+            <div class="error-number mb-6">500</div>
+            
+            <!-- Futuristic Icon -->
+            <div class="relative inline-block mb-8">
+                <div class="w-28 h-28 rounded-full bg-gradient-to-br from-primary to-blue flex items-center justify-center mx-auto floating">
+                    <i class="fas fa-robot text-4xl text-white"></i>
+                </div>
+                <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-red-500 animate-pulse"></div>
+                <div class="absolute -bottom-2 -left-2 w-6 h-6 rounded-full bg-blue-500 animate-ping"></div>
+            </div>
+
+            <!-- Message -->
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Something Went Wrong</h1>
+            <p class="text-gray-600 text-lg mb-8 max-w-md mx-auto">
+                Our servers are taking a quick break. We're working to fix this. Please try again in a few moments.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="location.reload()" class="btn btn-primary">
+                    <i class="fas fa-redo"></i> Try Again
+                </button>
+                <a href="index.html" class="btn btn-secondary">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+            </div>
+
+            <!-- Tech decoration -->
+            <div class="mt-16 grid grid-cols-3 gap-6 max-w-xs mx-auto">
+                <div class="text-center floating floating-delay-1">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-microchip text-primary"></i>
+                    </div>
+                    <p class="text-xs text-gray-500">Processing</p>
+                </div>
+                <div class="text-center floating floating-delay-2">
+                    <div class="w-12 h-12 rounded-xl bg-blue/10 flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-wifi text-blue"></i>
+                    </div>
+                    <p class="text-xs text-gray-500">Connected</p>
+                </div>
+                <div class="text-center floating floating-delay-3">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-shield-alt text-primary"></i>
+                    </div>
+                    <p class="text-xs text-gray-500">Secure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-reload after 30 seconds
+        setTimeout(() => {
+            location.reload();
+        }, 30000);
+    </script>
+</body>
+</html>
